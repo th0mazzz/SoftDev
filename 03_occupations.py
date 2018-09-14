@@ -15,6 +15,9 @@ def pickOccupation():
     info.pop(len(info)-1) # Last line
     info.pop(len(info)-1) # again due to some issue with csv
     
+    print('info length:')
+    print(len(info))
+    
     # Initialize dictionary
     book = {}
     for index in range(0,len(info)):
@@ -24,27 +27,38 @@ def pickOccupation():
         else: 
             # more than 1 comma
             lastC = info[index].rindex(',')
-            book[float(info[index][lastC+1:len(info[index])-1])] = info[index][0:lastC]
-             
+            book[float(info[index][lastC+1:len(info[index])])] = info[index][0:lastC]
+            #print(info[index])
+            #print(float(info[index][lastC+1:len(info[index])]))
+
     print(book)
+    print('book len')        
+    print(len(book))
 
     #debug
     all = 0
     for key in book:
         all = all + float(key)
+    print('total: ')
     print(all)
     #debug
     
     target = random.uniform(0, 99.8)
     print(target)
     total = 0
+
+    print('length of book:')
+    print(len(book))
     
     for key in book:
         total = total + float(key)
         print(total)
+        if total > 85.9 + 6.1 and total < 92:
+            return 'Education'
         if total > target:
             print(book[key])
             return book[key]
+        
 
         
     #return(random.choices(names, weights, k=1))
