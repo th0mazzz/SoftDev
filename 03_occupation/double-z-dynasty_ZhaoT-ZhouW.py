@@ -1,6 +1,6 @@
-# Wei Wen Zhou, Thomas Zhao
+# Thomas Zhao
 # SoftDev1 pd8
-# K#06: StI/O: Divine your Destiny!
+# K#06 -- StI/O: Divine your Destiny!
 # 2018-09-13
 
 import random

@@ -1,6 +1,6 @@
 #Thomas Zhao and Hui Min Wu
 #SoftDev1 pd8
-#K02 -- NO-body expects the Spanish Inquisition!
+#K#02 -- NO-body expects the Spanish Inquisition!
 #2018-09-10
 import random #importing the random module
 KREWES = {
