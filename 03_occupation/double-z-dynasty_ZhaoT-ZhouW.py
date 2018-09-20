@@ -2,7 +2,6 @@
 # SoftDev1 pd8
 # K#06: StI/O: Divine your Destiny!
 # 2018-09-13
-# Team Double Z Dynasty
 
 import random
 
