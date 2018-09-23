@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      
+      table {
+      border-collapse: collapse;
+      }
+      
+      table, th, td {
+      border: 1px solid black;
+      }
+
+      th {
+      text-align: left;
+      }
+      
+    </style>
+    <title>Occupations</title>
+  </head>
+  
+  <body>
+    <h1> The Sorting Hat has given you a new job! </h1>
+
+    
+    <p> This is your new occupation: {{ foo }} </p>
+    <br>
+    
+    <table style= "width:100%">
+      <tr>
+	<th> Occupation </th>
+	<th> Percentage </th>
+	<th> Getting started! </th>
+      </tr>
+
+      <tr> {% for i in c %}
+	<td> {{ i }} </td>
+	<td> {{ c[i][0] }} </td>
+	<td> <a href="{{ c[i][1] }}">{{ c[i][1] }}</a> </td>
+      </tr>
+      {% endfor %}
+      
+      
+
+  </body>
+</html>
