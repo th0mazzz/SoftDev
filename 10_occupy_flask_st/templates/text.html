@@ -23,7 +23,7 @@
     <h1> The Sorting Hat has given you a new job! </h1>
 
     
-    <p> This is your new occupation: {{ foo }} </p>
+    <p> This is your new occupation: {{ randomOcc }} </p>
     <br>
     
     <table style= "width:100%">
@@ -33,10 +33,10 @@
 	<th> Getting started! </th>
       </tr>
 
-      <tr> {% for i in c %}
+      <tr> {% for i in collection %}
 	<td> {{ i }} </td>
-	<td> {{ c[i][0] }} </td>
-	<td> <a href="{{ c[i][1] }}">{{ c[i][1] }}</a> </td>
+	<td> {{ collection[i][0] }} </td>
+	<td> <a href="{{ collection[i][1] }}">{{ collection[i][1] }}</a> </td>
       </tr>
       {% endfor %}
       

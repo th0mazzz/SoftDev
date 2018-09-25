@@ -16,19 +16,17 @@ def pickOccupation():
     info.pop(0) # Title line
     info.pop(len(info)-1) # Last line
     info.pop(len(info)-1) # again due to some issue with csv
-    
-    #print('info length:')
-    #print(len(info))
+
     
     # Initialize dictionary
     book = {}
-    for x in range(0,len(info)):
-        if info[x].count(',') == 2:
-            line = info[x].split(",")
+    for entry in range(0,len(info)):
+        if info[entry].count(',') == 2:
+            line = info[entry].split(",")
             book[line[0]] = (float(line[1]), line[2])
         else: 
             # more than 2 commas
-            storage = info[x].split('"') #splits by "
+            storage = info[entry].split('"') #splits by "
             storage.remove('') #removes '' element
             resplit = storage[1].split(',') #splits num&link element by ,
             resplit.remove('') #removes '' elements
@@ -41,8 +39,6 @@ def pickOccupation():
 
     target = random.uniform(0, 99.8)
     current = 0
-
-    print(book)
     
     for entry in book:
         current = current + book[entry][0]
@@ -52,11 +48,11 @@ def pickOccupation():
 
 @app.route("/occupations")
 def hello_world(): #assign fxn to route
-    f,b= pickOccupation()
+    occ,book = pickOccupation()
     return render_template(
         'text.html',
-        foo = f,
-        c = b
+        randomOcc = occ,
+        collection = book
         )
 
 
