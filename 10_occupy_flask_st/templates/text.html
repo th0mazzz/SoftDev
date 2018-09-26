@@ -33,10 +33,10 @@
 	<th> Getting started! </th>
       </tr>
 
-      <tr> {% for i in collection %}
-	<td> {{ i }} </td>
-	<td> {{ collection[i][0] }} </td>
-	<td> <a href="{{ collection[i][1] }}">{{ collection[i][1] }}</a> </td>
+      <tr> {% for item in collection %}
+	<td> {{ item }} </td>
+	<td> {{ collection[item][0] }} </td>
+	<td> <a href="{{ collection[item][1] }}">{{ collection[item][1] }}</a> </td>
       </tr>
       {% endfor %}
       
