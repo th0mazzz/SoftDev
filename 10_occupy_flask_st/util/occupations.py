@@ -24,6 +24,7 @@ def initDict():
             # more than 2 commas
             storage = info[entry].split('"') #splits by double quote character
             storage.remove('')               #removes empty string element
+            print(storage)
             resplit = storage[1].split(',')  #splits num&link element by comma
             resplit.remove('')               #removes empty string elements
             storage.append(resplit)          #adds the two lists together

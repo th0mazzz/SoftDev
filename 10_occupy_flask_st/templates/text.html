@@ -33,7 +33,8 @@
 	<th> Getting started! </th>
       </tr>
 
-      <tr> {% for item in collection %}
+      {% for item in collection %}
+      <tr>
 	<td> {{ item }} </td>
 	<td> {{ collection[item][0] }} </td>
 	<td> <a href="{{ collection[item][1] }}">{{ collection[item][1] }}</a> </td>
