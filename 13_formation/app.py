@@ -11,12 +11,12 @@ def root():
     return render_template(
         'template.html', heading='Enter your username')
 
-@app.route('/processing')
+@app.route('/processing', methods=["GET", "POST"])
 def process():
     return render_template(
         'return_template.html',
-        user_name=request.args['username'],
-        requestMethod=request.method,
+        user_name = request.args['username'],
+        requestMethod = request.method,
         greeting = 'Hello, I am Thomaz! You successfully submitted the request! Here are the details of your request. Below is myself displaying pride for your success.')
 
 @app.route('/print')
