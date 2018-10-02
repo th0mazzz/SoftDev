@@ -15,7 +15,7 @@ def root():
 def process():
     return render_template(
         'return_template.html',
-        user_name = request.args['username'],
+        user_name = request.form['username'],
         requestMethod = request.method,
         greeting = 'Hello, I am Thomaz! You successfully submitted the request! Here are the details of your request. Below is myself displaying pride for your success.')
 
