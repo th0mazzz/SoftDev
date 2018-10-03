@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Welcome!</title>
+  </head>
+  <body>
+    {% block content %}
+    You're logged in! <a href="/logout"> Logout.</a>
+    {% endblock %}
+  </body>
+</html>
