@@ -22,7 +22,7 @@ def createStuds():
     with open('raw/peeps.csv') as csvfile:
         reader = csv.DictReader(csvfile)
         for row in reader:
-            print(row)
+            #print(row)
             command0 = "INSERT INTO peps VALUES (\"" + row['name'] + "\"," + row['age'] + "," + row['id'] + ")"
             c.execute(command0)
 
