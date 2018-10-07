@@ -1,6 +1,6 @@
-#Jack Lu, Thomas Zhao
+#Team Tall_PPL: Jack Lu, Thomas Zhao
 #SoftDev1 pd8
-#K17 - Average
+#K17 -- Average
 #2018-10-05
 
 import sqlite3   #enable control of an sqlite database
