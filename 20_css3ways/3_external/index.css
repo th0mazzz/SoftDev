@@ -1,0 +1,31 @@
+body {
+    background-color:
+    gray;
+    font-family:Arial
+}
+
+h1 {
+    background-color: #BEBEBE;
+    color:white;
+    text-align:center
+}
+ul{
+    list-style-type:none; padding:0px
+}
+a{
+    color:#BEBEBE;
+    text-decoration:none
+}
+h2{
+    margin-left:15%;
+    margin-top:-7%
+}
+p{
+    margin-left:15%;
+    margin-top:-10px
+}
+footer{
+    background-color:#575757;
+    text-align:right;
+    padding:10px
+}
