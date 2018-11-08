@@ -2,7 +2,7 @@
      SoftDev pd8
      K21 -- Who Does Frame Work For?
      2018-11-07
--->
+  -->
 
 <!DOCTYPE html>
 <html>
@@ -34,6 +34,23 @@
     
   </head>
 
+  <div class="top-bar">
+    <div class="top-bar-left">
+      <a class="clear button" href="#">Uno</a>
+      <a class="clear button secondary" href="#">Dos</a>
+      <a class="clear button success" href="#">Tres</a>
+      <a class="clear button alert" href="#">Quatro</a>
+      <a class="clear button warning" href="#">Cinco</a>
+      <a class="clear button disabled" href="#"> Discapacitado</a>
+    </div>
+    <div class="top-bar-right">
+      <ul class="menu">
+	<li><input type="search" placeholder="Search"></li>
+	<li><button type ="button" class="hollow button">Search</button></li>
+      </ul>
+    </div>
+  </div>
+  
   <body style="background-color:lightblue">
     
     <h1>Welcome to this website.<h1>
@@ -116,13 +133,52 @@
 	</ul>
 	
 	<hr>
+	
+	<h5> The Forms </h5>
+
+	<p> Foundation provides support for the creation of forms. Common input methods are of course the text box but others include the dropdown selection box. You are allowed to have placeholders in these text fields by default so then the user knows what to type in. In this particular example, the form elements are sorted with a grid.</p>
+
+	<form>
+	  <div class="grid-container">
+	    <div class="grid-x grid-padding-x">
+	      <div class="medium-6 cell">
+		<input type="text" placeholder="Name">
+	      </div>
+	      <div class="medium-6 cell">
+		<input type="text" placeholder="Email">
+	      </div>
+	      <div class="medium-6 cell">
+		<input type="number" placeholder="Age">
+	      </div>
+	      <div class="medium-6 cell">
+		<select>
+		  <option value="Login">Login</option>
+		  <option value="Register">Register</option>
+		  <option value="CY@">CY@</option>
+		</select>
+	      </div>
+	      <div class="medium-6 cell">
+		<button type ="button" class="hollow button">Enter</button>
+	      </div>
+	    </div>
+	  </div>
+	</form>
+	
+	<hr>
+
+	<h5> The Top-Bar </h5>
+	<p> The top-bar exists at the very top of the page (you have to scroll back up)! It is easily supported by Foundation and is a pretty versatile feature. It's able to house not only buttons in a menu-like fashion, but also a search bar. </p>
+	
+	<hr>
+	
 	<h4> Hope something was learned! </h4>
 
 	<div class="footer" style="text-align:center">
-	  Copyright &copy; 2018 Zapdos
+	  Copyright &copy; Zapdos: Thomas Zhao and Sarar Aseer <br>
+	  SoftDev pd8 <br>
+	  K21 -- Who Does Frame Work For? <br>
+	  2018-11-07
 	</div>
-	
-</div>
 	
   </body>
 </html>
