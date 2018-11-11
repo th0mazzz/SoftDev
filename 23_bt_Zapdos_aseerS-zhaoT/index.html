@@ -1,3 +1,11 @@
+<!-- Zapdos: Thomas Zhao and Sarar Aseer
+     Softdev pd8
+     K23 -- How the Other Half Lives
+     2018-11-11
+-->
+
+<!-- FOR THIS ASSIGNMENT, WE LOOKED UP TO TEAM MICHAEL JACKSON'S WEBPAGE FOR REFERENCE -->
+
 <!DOCTYPE html>
 <html>
   <!------------ Heading stuff ------------->
@@ -21,6 +29,10 @@
       <a href="#home">Home</a>
       <a href="#containers">Containers</a>
       <a href="#buttons">Buttons</a>
+      <a href="#media">Media</a>
+      <a href="#alerts">Alerts</a>
+      <a href="#tables">Tables</a>
+      <a href="#jumbotron">Jumbotron</a>
     </nav>
 
     <br><br>
@@ -43,6 +55,8 @@
 	<p>This text is in a container. Elements, such as rows, go into columns for ease of display and control. <br>Another important note is that containers have padding on either side.</p>
       </div>
 
+      <br>
+      
       <!------------ Rows and Columns ------------->
       <div id="rowsandcolumns">
 	<h4>Rows and Columns</h4>
@@ -148,6 +162,121 @@
 	  </pre>
 	</div>
       </div>
+
+      <!------------ Media ------------->
+      <h4>Media</h4>
+      <p>Bootstrap allows for smooth implementation of media next to a content block. Media can be images, video, audio.</p>
+      
+      <div class="media" id="media">
+	<img class="mr-3" src="https://media.giphy.com/media/13gvXfEVlxQjDO/giphy.gif" alt="AvocadoGIF">
+	<div class="media-body">
+	  <h6 class="media-heading">
+	    Media Heading
+	  </h6>
+	  <p>This is the media body (the text formatted next to the media.<br>The code for media is:<br>
+	    <pre>
+	      &lt;div class="media"&gt;
+	          Media content here
+	          &lt;div class="media-body"&gt;
+	              &lt;h* class="media-heading"&gt;Media heading here&lt;/h*&gt;
+	          &lt;/div&gt;
+	      &lt;/div&gt;
+	    </pre>
+	  </p>
+	</div>
+      </div>
+
+      <!------------ Alerts ------------->
+      <div id="alerts">
+	<br>
+	<h4>Alerts</h4>
+	<p>Bootstrap provides many default alerts. Alerts are text enclosed within a box, making them super easy to manipulate in terms of front-end displaying. They can be created using the following code:<br></p>
+	<pre>
+	  &lt;div class="alert alert-*" role="alert"&gt;primary alert&lt;/div&gt;
+	</pre>
+	<p>where * is replaced by the alert style's name. Some alerts are shown below with their names.</p>
+
+	<div class="alert alert-primary" role="alert">primary alert</div>
+	<div class="alert alert-secondary" role="alert">secondary alert</div>
+	<div class="alert alert-danger" role="alert">danger alert</div>
+      </div>
+
+      <!------------ Tables ------------->
+      <div id="tables">
+	<br>
+	<h4>Tables</h4>
+	<p>Bootstrap provides easy access to make a table. The following code is used to make a table. You can have as many <i>th</i>, <i>tbody</i>, and <i>td</i> as you need.</p>
+
+	<pre>
+	  &lt;table class="table"&gt;
+	      &lt;thead style=Add Styling Here&gt;
+	          &lt;th scope="col"&gt;ColumnName&lt;/th&gt;
+	          ...
+              &lt;/thead&gt;
+	      &lt;tbody&gt;
+	          &lt;td&gt;Name&lt;/td&gt;
+	          ...
+	      &lt;/tbody&gt;
+	      &lt;tbody&gt;
+	      ....
+	      &lt;tbody&gt;
+	  &lt;/table&gt;
+	</pre>
+	
+	<table class="table">
+	  <thead style="background-color:orange;color:blue">
+	    <th scope="col">Column1</th>
+	    <th scope="col">Column2</th>
+	    <th scope="col">Column3</th>
+	    <th scope="col">Column4</th>
+	  </thead>
+	  <tbody>
+	    <td>Row1Col1</td>
+	    <td>Row1Col2</td>
+	    <td>Row1Col3</td>
+	    <td>Row1Col4</td>
+	  </tbody>
+	  <tbody>
+	    <td>Row2Col1</td>
+	    <td>Row2Col2</td>
+	    <td>Row2Col3</td>
+	    <td>Row2Col4</td>
+	  </tbody>
+	  <tbody>
+	    <td>Row3Col1</td>
+	    <td>Row3Col2</td>
+	    <td>Row3Col3</td>
+	    <td>Row3Col4</td>
+	  </tbody>
+	</table>
+      </div>
+
+      <!------------ Jumbotron ------------->
+      <div id="jumbotron">
+	<br>
+	<h4>Jumbotron</h4>
+	<p>Jumbotron is Bootstrap providing a way to really bring attention to a particular section of the screen. It emphasizes large and can be created with the following code:</p>
+	<pre>
+	  &lt;div class="jumbotron"&gt;
+	    Content here
+	  &lt;/div&gt;
+	</pre>
+
+	<div class="jumbotron" style="background-color:orange;color:black">
+	  <h1>Jumbotron!</h1>
+	  <p>Jumbotron is a flashy feature to use!</p>
+	  <p><a class="btn btn-primary btn-lg" href="#jumbotron" role="button">Learn more</a></p>
+	</div>
+      </div>
+
+      <div class="footer" style="text-align:right">
+	Original webpage from Team Michael Jackson<br>
+	Recreated webpage by Team Zapdos<br>
+	K23 -- How the Other Half Lives<br>
+	Softdev pd8, 2018-11-11<br>
+	<br>
+      </div>
+
     </div>
   </body>
 </html>
