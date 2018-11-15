@@ -2,22 +2,41 @@
 <html>
   <head>
     <title>APIs</title>
+
+    <style>
+      a {
+      color:white
+      }
+    </style>
+    
   </head>
 
   <body style="text-align:center;background-color:black;color:white">
-    <h1>{{ nasa_data['title'] }}</h1>
+    <!-- Memes -->
+    <h1>The Meme of the Century (not really)</h1>
 
-    <img src={{ nasa_data['url'] }}>
-
-    <p>{{ nasa_data['explanation'] }}</p>
+    <img src={{ meme_data['result']['instanceImageUrl'] }} style="height:50%">
+    <br>
+    <p>
+      View source:
+      <a href={{ meme_data['result']['instanceUrl'] }}>{{ meme_data['result']['instanceUrl'] }}</a>
+      <br>
+      <br>
+      Powered by memegenerator.net
+    </p>
 
     <br><br>
     <hr>
-    
-    <h1>Quote of the Day</h1>
 
-    <p>"{{ quote_data['quote']['body'] }}"</p>
-    <p>- {{ quote_data['quote']['author'] }}</p>
+    <!-- Bored -->
+    <h1>I'm Bored. What Should I Do?</h1>
+    
+    <p>
+      Your activity: {{ bored_data['activity'] }}<br>
+      Accessibility: {{ bored_data['accessibility'] }}<br>
+      Type: {{ bored_data['type'] }}<br>
+      Participants: {{ bored_data['participants'] }}
+    </p>
 
     <br>
     
