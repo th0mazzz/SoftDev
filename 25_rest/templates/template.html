@@ -1,15 +1,25 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Nasa Image</title>
+    <title>APIs</title>
   </head>
 
   <body style="text-align:center;background-color:black;color:white">
-    <h1>{{ data['title'] }}</h1>
+    <h1>{{ nasa_data['title'] }}</h1>
 
-    <img src={{ data['url'] }}>
+    <img src={{ nasa_data['url'] }}>
 
-    <p>{{ data['explanation'] }}</p>
+    <p>{{ nasa_data['explanation'] }}</p>
 
+    <br><br>
+    <hr>
+    
+    <h1>Quote of the Day</h1>
+
+    <p>"{{ quote_data['quote']['body'] }}"</p>
+    <p>- {{ quote_data['quote']['author'] }}</p>
+
+    <br>
+    
   </body>
 </html>
