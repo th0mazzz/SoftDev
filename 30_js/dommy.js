@@ -53,7 +53,7 @@ var fib = function(n){
 };
 
 
-var counter = 1;
+var counter = 0;
 var addFib = function(){
     var list = document.getElementById('fiblist');
     var item = document.createElement("li");
@@ -63,12 +63,15 @@ var addFib = function(){
     //INSERT STUFF HERE
 };
 
-/*
 var addFib2 = function(e){
     console.log(e);
-    //INSERT STUFF HERE, THIS ONE IS DYNAMIC PROGRAMMING (SEE QAF)
+    var fiblist = [0, 1]
+    for (var i=2; i<=n; i++){
+	fiblist.push(fiblist[i-2] + fiblist[i-1]);
+    }
+    return fiblist[n];
 };
-*/
+
 
 var fb = document.getElementById('fb');
 fb.addEventListener("click", addFib);
