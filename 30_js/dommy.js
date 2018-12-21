@@ -1,10 +1,11 @@
 var changeHeading = function(e){
     var h = document.getElementById("h");
-    h.innerHTML = 'REPLACE';
+    h.innerHTML = this.innerHTML;
+    console.log(e);
 };
 
 var removeItem = function(e){
-    //REPLACE
+    this.remove();
 };
 
 var lis = document.getElementsByTagName("li");
@@ -12,20 +13,23 @@ var lis = document.getElementsByTagName("li");
 for (var i=0; i<lis.length; i++){
     lis[i].addEventListener('mouseover', changeHeading);
     lis[i].addEventListener('mouseout', changeHeading);
-    //lis[i].addEventListener('click', ???)
+    lis[i].addEventListener('click', removeItem)
 }
 
-/*
 
 var addItem = function(e){
-    var list = ???;
+    var list = document.getElementById('thelist');
     var item = document.createElement("li");
-    q?? = "WORD";
-    //STUFF HERE
-    list.???(item);
+    item.innerHTML = "WORD";
+    list.appendChild(item);
+    item.addEventListener('click', removeItem)
+    item.addEventListener('mouseover', changeHeading);
+    item.addEventListener('mouseout', changeHeading);
 };
 
-var button = document.getElementsById("b");
+
+
+var button = document.getElementById("b");
 button.addEventListener('click', addItem);
 
 var fib = function(n){
@@ -37,6 +41,8 @@ var fib = function(n){
     }
 };
 
+
+/*
 var addFib() = function(e){
     console.log(e)
     //INSERT STUFF HERE
