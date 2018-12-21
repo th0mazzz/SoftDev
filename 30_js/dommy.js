@@ -1,6 +1,17 @@
+// Team extends Everything (Hasif Ahmed, Thomas Zhao)
+// SoftDev pd8
+// K30 -- Sequential Progression III: Season of the Witch
+// 2018-12-21
+
 var changeHeading = function(e){
     var h = document.getElementById("h");
     h.innerHTML = this.innerHTML;
+    console.log(e);
+};
+
+var changeHeadingBack = function(e){
+    var h = document.getElementById("h");
+    h.innerHTML = "Hello World"
     console.log(e);
 };
 
@@ -12,7 +23,7 @@ var lis = document.getElementsByTagName("li");
 
 for (var i=0; i<lis.length; i++){
     lis[i].addEventListener('mouseover', changeHeading);
-    lis[i].addEventListener('mouseout', changeHeading);
+    lis[i].addEventListener('mouseout', changeHeadingBack);
     lis[i].addEventListener('click', removeItem)
 }
 
@@ -22,7 +33,7 @@ var addItem = function(e){
     var item = document.createElement("li");
     item.innerHTML = "WORD";
     list.appendChild(item);
-    item.addEventListener('click', removeItem)
+    item.addEventListener('click', removeItem);
     item.addEventListener('mouseover', changeHeading);
     item.addEventListener('mouseout', changeHeading);
 };
@@ -37,7 +48,7 @@ var fib = function(n){
 	return 1;
     }
     else{
-	return fib(n-1) + fib(n-1)
+	return fib(n-1) + fib(n-2);
     }
 };
 
