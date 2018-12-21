@@ -11,7 +11,7 @@ var changeHeading = function(e){
 
 var changeHeadingBack = function(e){
     var h = document.getElementById("h");
-    h.innerHTML = "Hello World"
+    h.innerHTML = "Hello World!"
     console.log(e);
 };
 
