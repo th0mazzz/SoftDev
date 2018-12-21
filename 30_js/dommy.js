@@ -42,18 +42,24 @@ var fib = function(n){
 };
 
 
-/*
-var addFib() = function(e){
-    console.log(e)
+var counter = 1;
+var addFib = function(){
+    var list = document.getElementById('fiblist');
+    var item = document.createElement("li");
+    list.appendChild(item);
+    item.innerHTML = "" + fib(counter);
+    counter += 1;
     //INSERT STUFF HERE
 };
-	
+
+/*
 var addFib2 = function(e){
     console.log(e);
     //INSERT STUFF HERE, THIS ONE IS DYNAMIC PROGRAMMING (SEE QAF)
 };
+*/
 
-var fb = document.getElementsById('fb');
+var fb = document.getElementById('fb');
 fb.addEventListener("click", addFib);
 
 
